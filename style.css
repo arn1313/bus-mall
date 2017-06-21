@@ -1,7 +1,21 @@
+* {
+  background-color: darkgrey;
+}
+
 ul li {
   display: inline-block;
   text-decoration: none;
 }
 img {
   width: 100px;
+  height: 75px;
+  margin: 25px;
+  padding: 5px;
+  border: 2px solid black;
+}
+.instructions {
+  font-size: 100px;
+}
+.view {
+  font-size: 10px;
 }
