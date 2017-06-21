@@ -59,6 +59,7 @@ function clickHand(event) {
     alert('click on a picture');
   }
   for(var i = 0; i < products.length; i++) {
+    localStorage.setItem('data', JSON.stringify(products));
     if(event.target.id === products[i].name) {
       products[i].clicks++;
     }
@@ -81,7 +82,7 @@ function handleList() {
       liEl.textContent = 'Product: ' + products[i].name + ' has been clicked ' + products[i].clicks + ' times.';
       picList.appendChild(liEl);
     }
-  };
+  }
   displayList();
 }
 
@@ -95,6 +96,14 @@ function render(){
     picWheel.appendChild(imgEl);
   }
 }
+
+var research = function(){
+  if (localStorage.data){
+    products = JSON.parse(localStorage.data);
+  } else {
+    getImage();
+  }
+};
 
 // function myChart() {
 //   var chartLabel = [];
