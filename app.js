@@ -59,10 +59,8 @@ function clickHand(event) {
     alert('click on a picture');
   }
   for(var i = 0; i < products.length; i++) {
-    console.log('event id: ', event.target.id);
     if(event.target.id === products[i].name) {
       products[i].clicks++;
-      console.log('event id: ', products[i]);
     }
   }
 
@@ -97,6 +95,52 @@ function render(){
     picWheel.appendChild(imgEl);
   }
 }
+
+// function myChart() {
+//   var chartLabel = [];
+//   var chartData = [];
+//   for (var i = 0; i < products.length; i++){
+//     chartData.push(products[i].clicks);
+//     chartLabel.push(products[i].name);
+//   }
+//   var ctx = document.getElementById('myChart').getContext('2d');
+//   var myChart = new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: chartLabel,
+//       datasets: [{
+//         label: 'Click Tracker',
+        // data: chartData,
+        // backgroundColor: [
+        //   'rgba(255, 99, 132, 0.2)',
+        //   'rgba(54, 162, 235, 0.2)',
+        //   'rgba(255, 206, 86, 0.2)',
+        //   'rgba(75, 192, 192, 0.2)',
+        //   'rgba(153, 102, 255, 0.2)',
+        //   'rgba(255, 159, 64, 0.2)'
+        // ],
+        // borderColor: [
+        //   'rgba(255,99,132,1)',
+        //   'rgba(54, 162, 235, 1)',
+        //   'rgba(255, 206, 86, 1)',
+        //   'rgba(75, 192, 192, 1)',
+        //   'rgba(153, 102, 255, 1)',
+        //   'rgba(255, 159, 64, 1)'
+        // ],
+        // borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         yAxes: [{
+//           ticks: {
+//             beginAtZero: true
+//           }
+//         }]
+//       }
+//     }
+//   });
+// }
 
 new Product('bag', 'images/bag.jpg');
 new Product('banana', 'images/banana.jpg');
