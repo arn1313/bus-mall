@@ -2,3 +2,6 @@ ul li {
   display: inline-block;
   text-decoration: none;
 }
+img {
+  width: 100px;
+}
