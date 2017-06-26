@@ -1,21 +1,73 @@
-* {
+
+body {
   background-color: darkgrey;
+  text-align: center;
 }
 
 ul li {
   display: inline-block;
   text-decoration: none;
 }
+
 img {
-  width: 100px;
-  height: 75px;
-  margin: 25px;
+  width: 200px;
+  height: 175px;
+  margin: 125px;
+  padding: 15px;
+  /*border: 10px solid black;*/
+}
+
+div h1 {
+  font-size: 30px;
+  text-shadow: 2px 2px darkgreen;
+}
+
+div h2 {
+  text-shadow: 2px 2px darkgreen;
+  font-size: 25px;
+}
+
+div p {
+  font-size: 10px
+  /*width: 25px;*/
+}
+
+#textarea {
+  background-color: grey;
+  box-shadow: 50px 50px 25px #888888;
+  border: 5px;
+  padding: 5px
+  /*width: 600px;*/
+  float: inherit;
+}
+
+#img {
+  border: 30px;
+  margin: 15px;
   padding: 5px;
-  border: 2px solid black;
 }
-.instructions {
-  font-size: 100px;
+
+/*//hope this works*/
+/*#work {
+font-size: 10px;
+text-align: center
+width: 100px;
+
 }
-.view {
-  font-size: 10px;
+
+/** {
+background-color: darkgrey;
+text-align: center;
 }
+
+
+#title {
+background-color: red;
+font-size: 200;x;
+}
+
+/*#title {
+font-size: 45px
+border: 2px dashed lightblue;
+}
+*/
